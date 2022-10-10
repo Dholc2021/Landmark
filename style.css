@@ -24,7 +24,23 @@ body {
 	display: flex;
 	gap: 1rem;
 }
-h1,h2,h3,h4,h5 {
+h1 {
+	margin: 0;
+	padding: 0;
+}
+h2 {
+	margin: 0;
+	padding: 0;
+}
+h3 {
+	margin: 0;
+	padding: 0;
+}
+h4 {
+	margin: 0;
+	padding: 0;
+}
+h5 {
 	margin: 0;
 	padding: 0;
 }
@@ -34,10 +50,11 @@ h1,h2,h3,h4,h5 {
 }
 
 nav-menu li{
-}col
+	color: #232087;
+}
 	
 
-h1 {
+/* h1 {
 	font-family: "Playfair Display", serif;
 	font-weight: 800;
 	font-size: 3rem;
@@ -67,7 +84,7 @@ h5 {
 }
 p {
 	margin: 0 0 1rem;
-}
+} */
 button.rounded {
 	background: #232087;
 	border: none;
@@ -97,7 +114,7 @@ p.large-paragraph {
 	display:flex;
 	gap: 1rem;
 	justify-content: space-between;
-	color: #333;
+	
 }
 header {
 	color: #232087;
@@ -108,19 +125,12 @@ header {
 	width: 100%;
 	z-index: 3;
 }
-#logo {
-	font-family: "Montserrat", sans-serif;
-	font-size: 1.7rem;
-	font-weight: 800;
-	color: #fff;
-	text-decoration: none;
-	position: relative;
-	top: 4px;
-}
+
+	
 .hamburger-menu {
 	background-color: transparent;
 	color: #232087;
-	border: 1px solid #fff;
+	border: 1px solid #333;
 	padding: 3px 5px;
 	width: 30px;
 	cursor: pointer;
@@ -130,7 +140,7 @@ header {
 .hamburger-menu .strip {
 	display: block;
 	height: 1px;
-	background-color: #fff;
+	background-color: #333;
 	margin: 4px 0;
 }
 header ul {
@@ -144,7 +154,7 @@ header ul li {
 	display: none;
 }
 header ul li a {
-	color: #999;
+	color: #fff;
 	font-size: 16px;
 	text-decoration: none;
 }
@@ -152,7 +162,7 @@ header ul.is-sticky li a {
 	color: #000;
 }
 header ul li a:hover,header ul li a.active {
-	color: #fff;
+	color: #232087;
 }
 header ul.is-sticky li a:hover,header ul.is-sticky li a.active {
 	color: #232087;
@@ -211,18 +221,18 @@ header ul.is-sticky li a:hover,header ul.is-sticky li a.active {
 /* start: how it works styles */
 #how-it-works {
 	padding: 3rem 0;
-	background: #232087;
+	background:rgba(255, 255, 255, 0.5);
 	text-align: center;
 }
 #how-it-works h2 {
 	margin-bottom: 3rem;
-	color: hwb(0 97% 1%);
+	color: #333;
 }
 #how-it-works .flex > div {
 	width: 30%;
 }
 #how-it-works h3 {
-	color: hwb(0 97% 1%)0;
+	color: #fff;
 	margin-top: 1rem;
 }
 #how-it-works span.fas {
@@ -305,7 +315,7 @@ header ul.is-sticky li a:hover,header ul.is-sticky li a.active {
 }
 /* end: properties styles */
 /* start: agents styles */
-#agents {
+/* #agents {
 	margin: 4rem 0 6rem;
 	padding: 0 0 6rem;
 	border-bottom: 1px solid #ccc;
@@ -332,7 +342,7 @@ header ul.is-sticky li a:hover,header ul.is-sticky li a.active {
 }
 #agents .card h3,#agents .card p {
 	padding-left: 1rem;
-}
+} */
 /* end: agents styles */
 /* start: best real estate company styles */
 #the-best {
@@ -447,10 +457,11 @@ header ul.is-sticky li a:hover,header ul.is-sticky li a.active {
 }
 #form-container {
 	width: 58%;
-	background: #fff;
+	background: #333;
 	padding: 3rem;
 	box-sizing: border-box;
 	height: 0%;
+	border-radius: 25px;
 }
 #form-container h3 {
 	color: #000;
@@ -475,16 +486,19 @@ header ul.is-sticky li a:hover,header ul.is-sticky li a.active {
 	color: #495057;
 }
 #form-container textarea {
+	
 	height: 170px;
 	margin-bottom: 2rem;
 	resize: none;
 }
 #address-container {
 	width: 38%;
-	background: #fff;
+	background: #232087;
+	color: #fff;
 	padding: 1.5rem;
 	box-sizing: border-box;
 	height: 0%;
+	border-radius: 25px;
 }
 #address-container label {
 	font-weight: 700;
@@ -624,7 +638,6 @@ footer small a:hover {
 	}
 	nav ul {
 		position: fixed;
-		background: #fff;
 		right: -100%;
 		top: 0;
 		margin: 0;
